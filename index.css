@@ -44,6 +44,12 @@ h2 {
   line-height: 1.45;
 }
 
+@media (max-width: 575px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
 h3 {
   font-style: normal;
   font-weight: 300;
@@ -147,7 +153,7 @@ header .hamburger .line {
 
 @media (max-width: 575px) {
   .about-restaurant {
-    padding: 90px 50px;
+    padding: 90px 0;
   }
 }
 
@@ -237,12 +243,6 @@ header .hamburger .line {
   justify-content: space-between;
   align-items: flex-end;
   min-height: 37px;
-}
-
-@media (max-width: 1000px) {
-  .restaurant-features .feature-header {
-    justify-content: flex-start;
-  }
 }
 
 @media (max-width: 475px) {
@@ -373,7 +373,6 @@ header .hamburger .line {
 }
 
 .download-btns div {
-  flex-basis: content;
   cursor: pointer;
   min-width: 255px;
   height: 64px;
@@ -383,6 +382,19 @@ header .hamburger .line {
   border: none;
 }
 
+@media (max-width: 575px) {
+  .download-btns div {
+    cursor: pointer;
+    min-width: 255px;
+    height: 64px;
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+    margin: 0 auto 20px;
+    border: none;
+  }
+}
+
 .download-btns a h3 {
   font-family: Montserrat;
   font-weight: 300;
@@ -390,6 +402,13 @@ header .hamburger .line {
   text-align: center;
   margin: 0 46px;
   line-height: 64px;
+}
+
+@media (max-width: 575px) {
+  .download-btns a h3 {
+    font-size: 15px;
+    margin: 0;
+  }
 }
 
 .download-btns a {
@@ -438,12 +457,6 @@ header .hamburger .line {
     display: block;
     margin: 50px auto;
     float: unset;
-  }
-}
-
-@media (max-width: 575px) {
-  h2 {
-    font-size: 30px;
   }
 }
 
@@ -578,7 +591,7 @@ header .hamburger .line {
 
 @media (max-width: 575px) {
   .event {
-    padding: 120px 50px;
+    padding: 120px 5%;
   }
 }
 
@@ -633,11 +646,16 @@ footer {
   text-align: center;
 }
 
-footer p {
-  display: inline-block;
+.footer-column {
+  display: inline-block;  
   width: 49%;
   height: 100%;
-  line-height: 92px;
-  vertical-align: middle;
-  margin: auto auto;
+}
+
+.footer-string {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
 }
